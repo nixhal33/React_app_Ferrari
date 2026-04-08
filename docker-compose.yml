@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
       target: production
-    image: ferrari-dubai:latest
-    container_name: ferrari-dubai
+    image: react-carapp
+    container_name: devops-web-carapp
     ports:
       - "80:80"
     restart: unless-stopped
