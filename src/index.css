@@ -1,0 +1,141 @@
+/* ========================================
+   FERRARI DUBAI — GLOBAL STYLES
+   ======================================== */
+
+:root {
+  --ferrari-red: #CC0000;
+  --ferrari-red-deep: #9B0000;
+  --ferrari-red-bright: #FF1A1A;
+  --ferrari-gold: #C8A96E;
+  --ferrari-gold-light: #E8C98E;
+  --black-primary: #0A0A0A;
+  --black-secondary: #111111;
+  --black-card: #161616;
+  --black-border: #252525;
+  --white-primary: #F5F0EB;
+  --white-secondary: #D4CFC8;
+  --white-muted: #8A857E;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+  --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--black-primary);
+  color: var(--white-primary);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ── CUSTOM CURSOR ── */
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: var(--ferrari-red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background 0.2s;
+  mix-blend-mode: normal;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(204, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: all 0.12s var(--transition-smooth);
+}
+
+.cursor.hovering { width: 16px; height: 16px; background: var(--ferrari-gold); }
+.cursor-ring.hovering { width: 54px; height: 54px; border-color: var(--ferrari-gold); }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black-primary); }
+::-webkit-scrollbar-thumb { background: var(--ferrari-red); border-radius: 2px; }
+
+/* ── SELECTION ── */
+::selection { background: var(--ferrari-red); color: white; }
+
+/* ── UTILITY ── */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ferrari-red);
+}
+
+.gold-line {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: var(--ferrari-gold);
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes lineExpand {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(204,0,0,0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(204,0,0,0); }
+}
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── NOISE OVERLAY ── */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
