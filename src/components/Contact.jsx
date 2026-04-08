@@ -36,7 +36,7 @@ export default function Contact() {
     setSubmitted(true);
   };
 
-  const models = ['Roma Spider', 'SF90 Stradale', '296 GTB', 'Purosangue', '812 Competizione', 'Portofino M', 'Other / Consultation'];
+  const models = ['Ferrari GT 990', 'SF90 Stradale', '296 GTB', 'Purosangue', '812 Competizione', 'Portofino M', 'Other / Consultation'];
 
   return (
     <section
