@@ -25,7 +25,7 @@ export default function Navbar() {
         </svg>
         <div className="navbar__brand">
           <span className="navbar__ferrari">FERRARI</span>
-          <span className="navbar__dubai">DUBAI</span>
+          <span className="navbar__dubai">NEPAL</span>
         </div>
       </div>
 
