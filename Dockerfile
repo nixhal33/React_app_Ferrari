@@ -9,13 +9,16 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install dependencies
-RUN npm ci --silent
+RUN npm install --silent
+#RUN npm ci --silent
 
 # Copy source code
 COPY . .
 
 # Build for production
 RUN npm run build
+
+RUN ls -l
 
 # ============================================================
 # Stage 2: Serve with Nginx
