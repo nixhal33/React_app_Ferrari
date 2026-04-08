@@ -5,12 +5,12 @@ services:
   ferrari-app:
     build:
       context: .
-      dockerfile: Dockerfile
-      target: production
-    image: ferrari-dubai:latest
-    container_name: ferrari-dubai
+#      dockerfile: Dockerfile
+#      target: production
+    image: react-carapp
+    container_name: devops-web-carapp
     ports:
-      - "80:80"
+      - "83:80"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80/health"]
