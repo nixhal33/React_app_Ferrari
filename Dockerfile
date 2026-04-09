@@ -18,7 +18,7 @@ COPY . .
 # Build for production
 RUN npm run build
 
-# List the directories that has recently been build
+# List the directories 
 RUN ls -l
 
 # ============================================================
