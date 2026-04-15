@@ -78,7 +78,7 @@ export default function Contact() {
                   </svg>
                 ),
                 label: 'Showroom',
-                value: 'Sheikh Zayed Road, Dubai, UAE',
+                value: 'Kathmandu Bhaktapur Chardobato, Nepal',
               },
               {
                 icon: (
@@ -87,7 +87,7 @@ export default function Contact() {
                   </svg>
                 ),
                 label: 'Phone',
-                value: '+971 4 329 7700',
+                value: '+977-9862317569',
               },
               {
                 icon: (
@@ -96,7 +96,7 @@ export default function Contact() {
                   </svg>
                 ),
                 label: 'Email',
-                value: 'dubai@ferrari.com',
+                value: 'nixhalkoirala8@gmail.com',
               },
               {
                 icon: (
