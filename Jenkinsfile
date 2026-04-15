@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Pushing Image"
                 withCredentials([usernamePassword(credentialsId:"docker", passwordVariable:"password", usernameVariable:"user")]){
-                    sh "docker tag ferrari-carapp ${env.user}/ferrari-carapp:dev"
+                    sh "docker tag ferrari-carapp:dev ${env.user}/ferrari-carapp:dev"
                     sh "docker login -u ${env.user} -p ${env.password}"
                     sh "docker push ${env.user}/ferrari-carapp:dev"
                 }
