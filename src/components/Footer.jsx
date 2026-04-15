@@ -11,8 +11,8 @@ export default function Footer() {
               <path d="M30 5C30 5 18 8 15 18C12 28 20 32 22 38C24 44 20 50 22 58C24 66 30 72 30 72C30 72 36 66 38 58C40 50 36 44 38 38C40 32 48 28 45 18C42 8 30 5 30 5Z" fill="currentColor"/>
             </svg>
             <div>
-              <span className="footer__ferrari">FERRARI</span>
-              <span className="footer__dubai">DUBAI</span>
+              <span className="footer__ferrari">HIMALAYAN</span>
+              <span className="footer__dubai">FERRARI NEPAL</span>
             </div>
           </div>
           <p className="footer__tagline">
