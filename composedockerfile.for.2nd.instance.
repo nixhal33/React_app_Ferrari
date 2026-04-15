@@ -1,0 +1,9 @@
+# using with now with port 82 and using ecommerceapp as a container name
+version: '3.8'
+services:
+  ecom-webapp:
+    image: kubenix/ferrari-carappdev
+    container_name: ferrari
+    ports:
+      - "81:80"
+    restart: always
