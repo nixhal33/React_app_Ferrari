@@ -4,12 +4,12 @@ import './Models.css';
 const MODELS = [
   {
     id: 1,
-    name: 'Roma Spider',
+    name: 'Ferrari GT 900',
     category: 'GT',
     tagline: 'La Nuova Dolce Vita',
     price: 'From AED 1,200,000',
     specs: { power: '620 CV', torque: '760 Nm', acceleration: '3.4s', topSpeed: '320 km/h' },
-    color: '#CC0000',
+    color: '#654d4d',
     gradient: 'linear-gradient(135deg, #1a0303 0%, #2d0505 50%, #1a0303 100%)',
     badge: 'NEW',
     image: null,
