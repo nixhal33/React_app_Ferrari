@@ -13,7 +13,7 @@ pipeline {
         stage("Build Image") {
             steps {
                 echo "Building"
-                sh "docker build -t ferrari-carapp:dev"
+                sh "docker build -t ferrari-carapp:dev ."
             }
         }
         stage("Push Image to repository") {
