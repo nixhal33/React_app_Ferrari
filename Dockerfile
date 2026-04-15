@@ -10,7 +10,6 @@ COPY package.json package-lock.json* ./
 
 # Install dependencies
 RUN npm install --silent
-#RUN npm ci --silent
 
 # Copy source code
 COPY . .
