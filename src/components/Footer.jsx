@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <p className="footer__tagline">
             Authorized Ferrari Dealer<br />
-            Sheikh Zayed Road, Dubai, UAE
+            Kathmandu Bhaktapur Chardobato, Nepal
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Footer() {
             },
             {
               title: 'Contact',
-              links: ['+971 4 329 7700', 'dubai@ferrari.com', 'Book Appointment', 'Directions'],
+              links: ['+977-9862317569', 'nixhell816@gmail.com', 'Book Appointment', 'Directions'],
             },
           ].map(({ title, links }) => (
             <div key={title} className="footer__col">
@@ -56,7 +56,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <span className="footer__copy">
-          © {new Date().getFullYear()} Ferrari N.V. All Rights Reserved. Ferrari Dubai — Authorized Dealer.
+          © {new Date().getFullYear()} Ferrari N.V. All Rights Reserved. Ferrari Nepal — Authorized Dealer.
         </span>
         <div className="footer__legal">
           <a href="#" className="footer__legal-link">Privacy Policy</a>
