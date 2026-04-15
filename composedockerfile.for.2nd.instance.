@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   ecom-webapp:
-    image: kubenix/ferrari-carappdev
+    image: kubenix/ferrari-carapp:dev
     container_name: ferrari
     ports:
       - "81:80"
